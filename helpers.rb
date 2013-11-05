@@ -8,7 +8,7 @@ module Helpers
       doc = Nokogiri::HTML(open(url))
       doc.css("div#article ol li")
     rescue Exception => e
-      ""
+      "Not found"
     end
   end
 end
