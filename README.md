@@ -21,7 +21,9 @@ Go to `http://localhost:9292`
 ## TODO
 
 1. Find a better name?
-2. Add support for many languages
+2. Add support for many languages.
+3. Smarter parser.
+4. Tests!
 
 ## Contributing
 
