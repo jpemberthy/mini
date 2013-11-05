@@ -6,7 +6,7 @@ module Helpers
     begin
       url = URI.encode("http://www.wordreference.com/definicion/#{word}")
       doc = Nokogiri::HTML(open(url))
-      doc.css("div#article ol li").first.text
+      doc.css("div#article ol li")
     rescue Exception => e
       ""
     end
