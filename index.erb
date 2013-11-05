@@ -14,7 +14,7 @@
       <li>
         <p><strong><%= word %>:</strong>
           <ol>
-            <% results.each do |definition| %>
+            <% results[0..4].each do |definition| %>
               <li><%= definition.text %></li>
             <% end  %>
           </ol>
