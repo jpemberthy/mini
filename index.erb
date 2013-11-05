@@ -1,0 +1,18 @@
+<p>Palabras, separadas por coma.</p>
+
+<form action="/definitions" method="post" accept-charset="utf-8">
+  <textarea rows="8" cols="80" name="words">
+  </textarea>
+
+  <p><input type="submit" value="Continue &rarr;"></p>
+</form>
+
+<% if @definitions %>
+  <h2>Definiciones</h2>
+
+  <ul>
+    <% @definitions.each do |word, definition| %>
+      <li><p><strong><%= word %>:</strong> <%= definition %></p></li>
+    <% end %>
+  </ul>
+<% end %>
