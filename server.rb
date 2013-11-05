@@ -33,7 +33,9 @@ class Mini < Sinatra::Base
   post "/definitions" do
     @definitions = {}
 
-    params["words"].split(",").each do |word|
+    words = params["words"].gsub(/[:,\?\.]/, "").split.map(&:strip).delete_if { |w| w.length < 4 }
+
+    words.each do |word|
       @definitions[word] = definition(word.strip)
     end
 
