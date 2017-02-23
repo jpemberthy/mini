@@ -4,7 +4,7 @@ A simple Sinatra text parser that retrieves the definition of the most relevant 
 
 ## Demo
 
-[http://mini-words.herokuapp.com](http://mini-words.herokuapp.com/)ß
+[http://mini-words.herokuapp.com](http://mini-words.herokuapp.com/)
 
 ## Installation
 
