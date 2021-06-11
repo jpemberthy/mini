@@ -1,6 +1,6 @@
 # Mini-Words
 
-A simple Sinatra text parser that retrieves the definition of the most relevant words, in **spanish**.
+A simple Sinatra text parser that retrieves the definition of the most relevant words, in **Spanish**.
 
 ## Demo
 
